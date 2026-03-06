@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Github</title>
 </head>
-<body>
+<body class="bg-[##F8FAFC]">
     <header>
         <div class="navbar bg-base-100 shadow-sm">
   <div class="flex-1">
@@ -26,5 +26,42 @@
   </div>
 </div>
     </header>
+    <section class="my-4 max-w-8/10 mx-auto shadow-sm p-5 rounded-xl">
+        <button class="btn">All</button>
+        <button class="btn">Open</button>
+        <button class="btn"> Closed</button>
+    </section>
+    <section class="my-4 max-w-8/10 mx-auto shadow-sm p-5 rounded-xl flex justify-between items-center">
+        <div class="flex items-center gap-2"><img src="./assets/Aperture.png" alt="">
+           <div>
+            <h1 id="count" class="font-bold">50 Issues</h1>
+            <p class="text-[#64748B]">Track and manage your project issues</p>
+           </div>
+        </div>
+        <div>
+            <p><i class="fa-solid fa-circle" style="color: #00a96e;"></i> open <i class="fa-solid fa-circle" style="color: #a855f7;"></i> closed </p>
+        </div>
+        
+    </section>
+    <section class="my-4 max-w-8/10 mx-auto shadow-sm p-5 rounded-xl" >
+      <div id="card-container" class="grid grid-cols-2 md:grid-cols-4 gap-2">
+        <div class="space-y-3 shadow-sm p-5 rounded-lg border-t-4 border-t-[#00A96E]">
+            <div class="flex justify-between">
+                <img src="./assets/Closed- Status .png" alt="">
+                <btn class="px-5 py-1 rounded-lg bg-[#FEECEC] text-[#EF4444] text-[12px] ">HIGH</btn>
+            </div>
+            <h1 class="font-semibold text-[14px] ">Fix navigation menu on mobile devices</h1>
+            <p class="text-[#64748B] text-[12px]">The navigation menu doesn't collapse properly on mobile devices...</p>
+            <div class="flex flex-wrap gap2 py-3 border-b border-b-[#E4E4E7]">
+                <btn class="px-5 rounded-lg bg-[#FEECEC] text-[#EF4444] text-[12px]"><i class="fa-solid fa-bug"></i>  BUG</btn>
+                <btn class="px-5 rounded-lg text-[#D97706] bg-[#FDE68A] text-[12px]"><i class="fa-solid fa-virus"></i> Help Wanter</btn>
+            </div>
+            <p class="text-[#64748B] text-[12px]">#1 by john_doe </p>
+            <p class="text-[#64748B] text-[12px]">1/15/2024</p>
+
+        </div>
+      </div>
+    </section>
+    <script src="./script/data.js"></script>
 </body>
 </html>
