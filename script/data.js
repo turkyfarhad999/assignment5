@@ -90,15 +90,15 @@ document.getElementById("mod").innerHTML=`
                 <btn class="px-5 rounded-lg bg-[#FEECEC] text-[#EF4444] text-[12px]"><i class="fa-solid fa-bug"></i>  BUG</btn>
                 <btn class="px-5 rounded-lg text-[#D97706] bg-[#FDE68A] text-[12px]"><i class="fa-solid fa-virus"></i> Help Wanter</btn>
             </div>
-             <p class="text-[#64748B]">The navigation menu doesn't collapse properly on mobile devices...</p>
-             <div>
+             <p class="text-[#64748B]">${data.description}</p>
+             <div class="flex justify-between items-center">
                 <div>
-                    <p>Assignee:</p><br>
+                    <p class="font-bold">Assignee:</p>
                     <p>Turky</p>
                 </div>
                 <div>
-                    <p>priority</p><br>
-                    <p><btn class="px-5 py-1 rounded-lg bg-[#FEECEC] text-[#EF4444] text-[12px] ">HIGH</btn></p>
+                    <p>priority</p>
+                    <p><btn class="px-5 py-1 rounded-lg bg-[#FEECEC] text-[#EF4444] text-[12px] ">${data.priority}</btn></p>
                 </div>
              </div>
     <div class="modal-action">
