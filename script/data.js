@@ -1,3 +1,14 @@
+const loading=(status)=>{
+if(status==true){
+    document.getElementById("loading").classList.remove("hidden")
+    document.getElementById("sec").classList.add("hidden")
+    
+}
+else{
+     document.getElementById("sec").classList.remove("hidden")
+    document.getElementById("loading").classList.add("hidden")
+}
+}
 const countData=()=>{
     document.getElementById("count").innerText=`${count} Issues`
 }
@@ -8,13 +19,17 @@ const deactive=()=>{
      })
 }
 const loadAlldata=()=>{
+       loading(true)
+     deactive()
+    document.getElementById("all").classList.add("active")
+   
     fetch("https://phi-lab-server.vercel.app/api/v1/lab/issues")
     .then(res=>res.json())
     .then(i=>showData(i.data))
-    deactive()
-    document.getElementById("all").classList.add("active")
+   
 }
 const loadOpenData=()=>{
+    loading(true)
     fetch("https://phi-lab-server.vercel.app/api/v1/lab/issues")
     .then(res=>res.json())
     .then(i=>showOpenData(i.data))
@@ -75,7 +90,7 @@ for(const i of data){
     }
     container.appendChild(card)
 }
-
+loading(false)
 countData();
 
 }
@@ -154,9 +169,10 @@ for(const i of data){
     }
     
     countData();
-    
+    loading(false)
 }
 const loadCloseData=()=>{
+    loading(true)
     fetch("https://phi-lab-server.vercel.app/api/v1/lab/issues")
     .then(res=>res.json())
     .then(i=>showCloseData(i.data))
@@ -199,5 +215,6 @@ for(const i of data){
     }
     
     countData();
-    
+    loading(false)
 }
+
