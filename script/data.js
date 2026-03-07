@@ -218,3 +218,12 @@ for(const i of data){
     loading(false)
 }
 
+document.getElementById("searchbtn")
+.addEventListener("click",()=>{
+    const search=document.getElementById("searchbox").value 
+    console.log(search);
+    loading(true)
+    fetch(`https://phi-lab-server.vercel.app/api/v1/lab/issues/search?q=${search}`)
+    .then(res=>res.json())
+    .then(i=>showData(i.data))
+})
