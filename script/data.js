@@ -59,7 +59,8 @@ for(const i of data){
             <p class="text-[#64748B] text-[12px]">${i.description}</p>
             <div class="flex flex-wrap gap2 py-3 border-b border-b-[#E4E4E7]">
                 <btn class="px-5 rounded-lg bg-[#FEECEC] text-[#EF4444] text-[12px]"><i class="fa-solid fa-bug"></i>${i.labels[0]}</btn>
-                <btn class="px-5 rounded-lg text-[#D97706] bg-[#FDE68A] text-[12px]"><i class="fa-solid fa-virus"></i> ${i.labels[1]?i.labels[1]:"No problem "}</btn>
+                ${i.labels[1]?
+               ` <btn class="px-5 rounded-lg text-[#D97706] bg-[#FDE68A] text-[12px]"><i class="fa-solid fa-virus"></i> ${i.labels[1]}</btn>`:''}
             </div>
             <p class="text-[#64748B] text-[12px]">#${i.author}</p>
             <p class="text-[#64748B] text-[12px]">${i.createdAt}</p>
@@ -142,7 +143,8 @@ for(const i of data){
             <p class="text-[#64748B] text-[12px]">${i.description}</p>
             <div class="flex flex-wrap gap2 py-3 border-b border-b-[#E4E4E7]">
                 <btn class="px-5 rounded-lg bg-[#FEECEC] text-[#EF4444] text-[12px]"><i class="fa-solid fa-bug"></i>${i.labels[0]}</btn>
-                <btn class="px-5 rounded-lg text-[#D97706] bg-[#FDE68A] text-[12px]"><i class="fa-solid fa-virus"></i> ${i.labels[1]?i.labels[1]:"No problem "}</btn>
+                ${i.labels[1]?
+               ` <btn class="px-5 rounded-lg text-[#D97706] bg-[#FDE68A] text-[12px]"><i class="fa-solid fa-virus"></i> ${i.labels[1]}</btn>`:''}
             </div>
             <p class="text-[#64748B] text-[12px]">#${i.author}</p>
             <p class="text-[#64748B] text-[12px]">${i.createdAt}</p>
@@ -188,7 +190,8 @@ for(const i of data){
             <p class="text-[#64748B] text-[12px]">${i.description}</p>
             <div class="flex flex-wrap gap2 py-3 border-b border-b-[#E4E4E7]">
                 <btn class="px-5 rounded-lg bg-[#FEECEC] text-[#EF4444] text-[12px]"><i class="fa-solid fa-bug"></i>${i.labels[0]}</btn>
-                <btn class="px-5 rounded-lg text-[#D97706] bg-[#FDE68A] text-[12px]"><i class="fa-solid fa-virus"></i> ${i.labels[1]?i.labels[1]:"No problem "}</btn>
+                ${i.labels[1]?
+               ` <btn class="px-5 rounded-lg text-[#D97706] bg-[#FDE68A] text-[12px]"><i class="fa-solid fa-virus"></i> ${i.labels[1]}</btn>`:''}
             </div>
             <p class="text-[#64748B] text-[12px]">#${i.author}</p>
             <p class="text-[#64748B] text-[12px]">${i.createdAt}</p>
