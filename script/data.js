@@ -201,6 +201,7 @@ for(const i of data){
     `
     card.style.borderTop="4px solid #A855F7";
         card.style.borderRadius="10px"
+        card.querySelector(".topimg").src="./assets/Closed- Status .png"
          container.appendChild(card)
 
     
