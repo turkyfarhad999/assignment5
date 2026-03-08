@@ -97,6 +97,7 @@ document.getElementById("mod").innerHTML=`
     <div class="flex justify-between items-center">
         <button class="px-5 py-1 rounded-lg text-[#FEECEC] bg-[#00A96E] text-[12px] border-none ">opened</button>
         <p class="text-[#64748B] text-[12px]">Opened by Turky </p>
+        <p class="text-[#64748B] text-[12px]">${data.createdAt}</p>
     </div>
     <div class="flex flex-wrap gap2 py-3 border-b border-b-[#E4E4E7]">
                 <btn class="px-5 rounded-lg bg-[#FEECEC] text-[#EF4444] text-[12px]"><i class="fa-solid fa-bug"></i>  BUG</btn>
