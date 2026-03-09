@@ -107,7 +107,7 @@ document.getElementById("mod").innerHTML=`
              <div class="flex justify-between items-center">
                 <div>
                     <p class="font-bold">Assignee:</p>
-                    <p>Turky</p>
+                    <p>${data.assignee}</p>
                 </div>
                 <div>
                     <p>priority</p>
